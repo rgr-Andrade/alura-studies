@@ -1,6 +1,8 @@
+import { ITarefa } from '../../../types/tarefa';
 import style from '../Lista.module.scss';
 
-export default function Item({tarefa, tempo}: {tarefa: string, tempo: string}){
+export default function Item({tarefa, tempo, selecionado, completado, id}: ITarefa){
+    console.log('Item atual',{tarefa, tempo, selecionado, completado, id} );
 
     return(
 
